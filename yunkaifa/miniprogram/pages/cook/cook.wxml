@@ -1,0 +1,68 @@
+<!--pages/cook/cook.wxml-->
+<view>
+  <swiper autoplay='true' indicator-dots='true' catchtap='onSwiperTap' indicator-color='#ffffff' interval='3000'>
+    <swiper-item>
+      <image src='/pages/images/haibao/chaofan@text.jpg' mode='apsectFit' data-cook-id='1'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/pages/images/haibao/pipajiang@text.jpg' mode='apsectFit' data-cook-id='2'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/pages/images/haibao/yutang@text.jpg' mode='apsectFit' data-cook-id='3'></image>
+    </swiper-item>
+  </swiper>
+  <view class='nav'>
+    <view class='nav-item'>
+      <view>
+        <image src='/pages/images/icon/fenlei.jpg' style='width:25px;height:23px;'></image>
+      </view>
+      <view>菜谱分类</view>
+    </view>
+    <view class='nav-item'>
+      <view>
+        <image src='/pages/images/icon/fenlei.jpg' style='width:25px;height:23px;'></image>
+      </view>
+      <view>视频</view>
+    </view>
+    <view class='nav-item'>
+      <view>
+        <image src='/pages/images/icon/fenlei.jpg' style='width:25px;height:23px;'></image>
+      </view>
+      <view>美食养生</view>
+    </view>
+    <view class='nav-item'>
+      <view>
+        <image src='/pages/images/icon/fenlei.jpg' style='width:25px;height:23px;'></image>
+      </view>
+      <view>闪购</view>
+    </view>
+  </view>
+  <view class='put'>
+    <icon type='search'></icon>
+    <input type='text' placeholder='请输入搜索内容'></input>
+  </view>
+  <view class="hr">
+    <text class="left">最新菜谱</text>
+    <text class="right">></text>
+  </view>
+  <view class="list">
+    <view class="list-item" wx:for='{{cooklist}}' wx:for-item='item' wx:for-index='index' wx:key="*" bindtap='onTapToDetail' data-cook-id='{{item.cookId}}'>
+      <image src="{{item.img}}"></image>
+      <view class="list-title">
+        <text>{{item.title}}</text>
+        <view class="list-like">
+          <!-- <image wx:if="{{item.collectionStatus}"         src='/images/icon/collected.png'></image>
+             <image wx:else src='/images/icon/collect.png'></image> -->
+          <image hidden="{{!item.collectionStatus}}" src='/images/icon/collected.png'></image>
+          <image hidden="{{item.collectionStatus}}" src='/images/icon/collect.png'></image>
+          <text>{{item.collectionNum}}</text>
+          <image src='/images/icon/view.png'></image>
+          <text>{{item.readingNum}}</text>
+          <image src='/images/icon/message.png'></image>
+          <text>{{item.commentNum}}</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

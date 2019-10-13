@@ -1,0 +1,12 @@
+<!--pages/welcome/yemian.wxml-->
+<!-- <text>pages/welcome/yemian.wxml</text> -->
+<view class='welcome' style='background-image:url(logo3.jpg);'>
+<text class='share'>欢迎来到我的小程序</text>
+<image src='img3.png' class='logo'></image>
+<!-- <image src='logo4.png' class='logo0'></image> -->
+<view bindtap='onTapJump' class='a-container'>
+<text class='journey'>开启购物之旅</text>
+</view>
+<!-- <image src='im1.jpg' class='logo'></image> -->
+<text class='journey1'>点击进入哦！</text>
+</view>

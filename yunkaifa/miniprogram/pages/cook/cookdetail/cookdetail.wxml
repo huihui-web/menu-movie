@@ -1,0 +1,36 @@
+<!--pages/cook/cooktail/cooktail.wxml-->
+<!-- <image src='{{cook.img}}' class='imgs'></image> -->
+<!-- <view wx:for="{{cook}}"></view> -->
+<view class='head'>
+  <image class='head-image' src='{{isPlayingMusic?cook.music.coverImg:cook.img}}'></image>
+  <image catchtap='onMusicTap' class='music' src="{{isPlayingMusic?'/images/icon/music_stop.png':'/images/icon/music_start.png'}}"></image>
+  <view class='mix-head'>
+    <view class='title'>{{cook.title}}</view>
+    <view class='count'>
+      <text>{{cook.author}}</text>
+      <text class='text'>{{cook.dateTime}}</text>
+    </view>
+    <view class='content'>
+      <text>{{cook.detail}}</text>
+    </view>
+    <view class='list'>
+      <view class="list-like">
+        <view bindtap='onCollectionTap' data-cook-id='{{cook.cookId}}'>
+          <image hidden="{{!cook.collectionStatus}}" src='/images/icon/collected.png'></image>
+          <image hidden="{{cook.collectionStatus}}" src='/images/icon/collect.png'></image>
+          <text>{{cook.collectionNum}}</text>
+        </view>
+        <view bindtap='onUpTap' data-cook-id='{{cook.cookId}}'>
+          <image animation='{{animationUp}}' hidden="{{!cook.upStatus}}" src='/images/icon/liked.png'></image>
+          <image animation='{{animationUp}}' hidden="{{cook.upStatus}}" src='/images/icon/like.png'></image>
+          <!-- <image src='/images/icon/like.png'></image> -->
+          <text>{{cook.upNum}}</text>
+        </view>
+        <view bindtap='onCommentTap' data-cook-id='{{cook.cookId}}'>
+          <image src='/images/icon/message.png'></image>
+          <text>{{cook.commentNum}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

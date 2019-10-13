@@ -1,0 +1,46 @@
+/* pages/welcome/yemian.wxss */
+.welcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color:#49aaaa; */
+  /* background-image:url(logo3.jpg); */
+  background-size:100% 100%;
+  background-position:center;
+}
+.logo{
+  width: 150rpx;
+  height: 150rpx;
+  /* margin-top:200rpx; */
+  margin-right:-590rpx ;
+border-radius: 50%;
+}
+
+page{
+  background: #49aaaa;
+}
+.share{
+  /* margin-top: 100rpx; */
+  font-size: 32rpx;
+  font-weight: bold;
+  color: rgb(235, 58, 14);
+}
+.journey{
+  font-size: 22rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: rgba(247, 4, 45, 0.925);
+}
+.journey1{
+  color: yellowgreen;
+  font-size: 32rpx
+}
+.a-container{
+  border: 2px dotted rgb(9, 148, 62);
+  height: 80rpx;
+  margin-top: 680rpx;
+  width: 200rpx;
+  text-align: center;
+  border-radius: 25%;
+  background: lightblue;
+}

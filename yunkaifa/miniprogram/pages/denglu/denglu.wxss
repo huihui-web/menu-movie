@@ -1,0 +1,89 @@
+/* pages/denglu.wxss */
+button{
+  background: green;
+  color: white
+}
+.loginTitle{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.select{
+  font-weight:bold;
+  font-size: 20px;
+  color: red;
+  width: 50%;
+  text-align: center;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 5rpx solid red;
+}
+.default{
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.hr{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+}
+.account{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%
+}
+.account1{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 90%
+}
+/* .a{
+  background: red;
+
+} */
+.num{
+  margin: 0 20px
+}
+.num1{
+  display: flex;
+  flex-direction: row
+}
+.switch1{
+  margin-top: -8px;
+  margin-left:60px;
+}
+.box{
+  display: flex;
+  flex-direction: row
+}
+.num2{
+  width: 55%;
+}
+.code{
+  color: #999999;
+  width: 40%;
+  height:40px;
+  line-height:40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  font-size: 15px;
+  border-radius:27px;
+  margin-right:3%;
+  margin-top:8px;
+  background: #efeeec
+}
+.agree{
+  margin-left: 5px;
+  color: #666666
+}
+.option{
+  color: red;
+  font-weight: bold;
+  text-decoration: underline
+}

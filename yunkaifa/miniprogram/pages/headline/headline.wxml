@@ -1,0 +1,14 @@
+<!--pages/headline/headline.wxml-->
+<!-- <text>pages/headline/headline.wxml</text> -->
+<view class='bg'style='background:white;display:flex'>
+<!-- <view class='hr'></view> -->
+<!-- <view class='content'> -->
+<image src='/images/logo.jpg' style='width:50px;height:50px;margin:10px'></image>
+<view class='zl'style='margin:10px;'>
+<view class='name'style='color:gray'>{{userInfo.nickName}}</view>
+<view class='city'style='color:gray'>所在地：{{userInfo.country}}</view>
+<!-- </view> -->
+</view>
+<!-- 
+<import src='../me/me.wxml'/> -->
+</view>

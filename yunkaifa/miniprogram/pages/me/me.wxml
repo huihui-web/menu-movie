@@ -1,0 +1,88 @@
+<!--miniprogram/pages/me/me.wxml-->
+<view class='me-container'>
+  <view class='category-item personal-info'>
+    <!--pages/headline/headline.wxml-->
+    <!-- <text>pages/headline/headline.wxml</text> -->
+    <view class='bg' style='background:white;display:flex'>
+      <!-- <view class='hr'></view> -->
+      <!-- <view class='content'> -->
+      <image src='/images/logo.jpg' style='width:50px;height:50px;margin:10px'></image>
+      <view class='zl' style='margin:10px;'>
+        <view class='name' style='color:gray'>{{userInfo.nickName}}</view>
+        <view class='city' style='color:gray'>所在地：{{userInfo.country}}</view>
+        <!-- </view> -->
+      </view>
+      <!-- 
+<import src='../me/me.wxml'/> -->
+    </view>
+
+  </view>
+</view>
+<view class='category-item'>
+  <view class='detail-item'>
+    <image src='../images/clouddb.png'></image>
+    <text>云开发--云数据库</text>
+  </view>
+  <view class='detail-item'>
+    <view class='detail-button'>
+      <button bindtap='insert'>插入数据</button>
+      <button bindtap='update'>更新数据</button>
+      <button bindtap='search'>查找数据</button>
+      <button bindtap='remove'>删除数据</button>
+    </view>
+  </view>
+  <view class='detail-item'>
+    <image src='../images/cloudfunction.png'></image>
+    <text>云开发--云函数</text>
+  </view>
+  <view class='detail-item'>
+    <view class='detail-button'>
+      <button bindtap='sum'>调用云函数</button>
+      <button bindtap='getOpenId'>获取当前用户openid</button>
+      <button bindtap='batchDelete'>批量删除数据</button>
+    </view>
+  </view>
+
+  <view class='detail-item'>
+    <image src='../images/cloudstorage.png'></image>
+    <text>云开发--云存储</text>
+  </view>
+  <view class='detail-item'>
+    <view class='detail-button'>
+      <button bindtap='upload'>图片上传</button>
+      <button bindtap='download'>图片下载</button>
+    </view>
+  </view>
+  <view class='category-item'>
+    <view class='detail-item' bindtap='clearCache'>
+      <image src='../images/icon/clear.png'></image>
+      <text>缓存清理</text>
+    </view>
+    <view class='detail-item' bindtap='showMap'>
+      <image src='../images/icon/location.png'></image>
+      <text>位置信息</text>
+    </view>
+    <view class='detail-item' bindtap='showSystemInfo'>
+      <image src='../images/icon/cellphone.png'></image>
+      <text>系统信息</text>
+    </view>
+    <view class='detail-item' bindtap='showNetWork'>
+      <image src='../images/icon/network.png'></image>
+      <text>网络状态</text>
+    </view>
+    <view class='detail-item' bindtap='showCompass'>
+      <image src='../images/icon/compass.png'></image>
+      <text>指南针</text>
+      <modal title='指南针' confirm-text='确定' no-cancel hidden='{{compassHidden}}' bindconfirm='hideCompass' confirm-color='#1f4ba5'>当前方向：偏北{{compassVal}}°</modal>
+    </view>
+    <view class='detail-item' bindtap='shake'>
+      <image src='../images/icon/shake.png'></image>
+      <text>摇一摇</text>
+      <modal title='摇一摇' confirm-text='确定' no-cancel hidden='{{shakeInfo.gravityModalHidden}}' bindconfirm='gravityModalConfirm' confirm-color='#1f4ba5'>当前摇一摇次数：{{shakeInfo.num}}</modal>
+    </view>
+    <view class='detail-item' bindtap='scanQRCode'>
+      <image src='../images/icon/scan.png'></image>
+      <text>扫码</text>
+    </view>
+  </view>
+</view>

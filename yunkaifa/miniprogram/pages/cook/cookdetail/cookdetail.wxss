@@ -1,0 +1,72 @@
+/* pages/cook/cookdetail/cookdetail.wxss */
+.list-item {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.head-image{
+  width: 100%
+}
+.music{
+  width: 110rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 180rpx;
+  opacity: 0.9
+}
+/* .list-item image {
+  width: 180rpx;
+  height: 150rpx;
+ 
+} */
+.list-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 2px;
+  font-size: 20px;
+}
+.list-like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.list-like image {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.list-like text {
+  margin-right: 25px;
+}
+.title{
+ font-weight:bold;
+ font-size: 20px
+}
+.text{
+float: right
+}
+.count{
+  margin: 8px 0;
+  color: gray;
+  font-size: 15px
+}
+.head{
+  margin: 0px
+}
+.mix-head{
+  margin: 15px
+}
+.list{
+ margin:0 auto;
+width:200px;
+
+}
+.imgs{
+  width: 100%
+}

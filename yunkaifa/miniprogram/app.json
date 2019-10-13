@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/welcome/yemian",
+    "pages/cook/cook",
+    "pages/headline/headline",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/cook/cookdetail/cookdetail",
+    "pages/denglu/denglu",
+    "pages/cook/cookcomment/cookcomment",
+    "pages/movie/movie",
+    "pages/movie/moremovie/moremovie",
+    "pages/movie/moremovie/moviedetail",
+    "pages/movie/moviedetail/moviedetail",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/me/me",
+    "pages/me/device/device"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#cccccc",
+    "color": "#a1a1a1",
+    "selectedColor": "blue",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/cook/cook",
+        "text": "菜谱",
+        "iconPath": "pages/images/icon/menu-0.jpg",
+        "selectedIconPath": "pages/images/icon/menu-1.jpg"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/images/icon/me-0.jpg",
+        "selectedIconPath": "pages/images/icon/me-1.jpg"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影",
+        "iconPath": "pages/images/icon/film-0.jpg",
+        "selectedIconPath": "pages/images/icon/film-1.jpg"
+      }
+    ]
+  },
+  "requireBackgroundModes": [
+    "audio"
+  ]
+}

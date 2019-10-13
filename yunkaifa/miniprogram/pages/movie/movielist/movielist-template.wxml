@@ -1,0 +1,20 @@
+<import src="../singlemovie/movie-template.wxml" />
+<template name='movieListTpl'>
+  <view class='movie-list-container'>
+    <view class='inner-container'>
+      <view class='movie-head'>
+        <text class='slogan'>{{categoryTitle}}</text>
+        <view class='more' catchtap='onMoreTap' data-category='{{categoryTitle}}'>
+          <text class='more-text'>更多</text>
+          <image class='more-img' src='/images/icon/arrow_right.png'></image>
+        </view>
+      </view>
+      <view class='movies-container'>
+        <!-- <image src='https://img3.doubanio.com/view.celebrity/s-ratio/celebrity/public/p17525.jpg'></image> -->
+        <block wx:for='{{movies}}' wx:for-item='movie' wx:key=''>
+          <template is='movieTpl' data='{{...movie}}'/>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,82 @@
+/* pages/cook/cook.wxss */
+swiper{
+  width: 100%;
+  height: 510rpx;
+
+}
+swiper image{
+  width: 750rpx;
+  height: 510rpx;
+}
+input{
+  float: left;
+  margin: 10px;
+}
+icon{
+  float: left;
+   margin: 10px;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.nav-item{
+  width: 25%;
+  font-size: 12px;
+  margin-top: 20px
+}
+.put{
+   overflow: hidden
+}
+.hr {
+  background: #ccc;
+  height: 58rpx;
+  margin-top: 5px;
+  
+}
+.left {
+  font-size: 20px;
+  font-weight: blod;
+  margin-left: 20px;
+}
+.right {
+  position: absolute;
+  right: 10px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.list-item image {
+  width: 180rpx;
+  height: 150rpx;
+}
+.list-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 2px;
+  font-size: 20px;
+}
+.list-like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.list-like image {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.list-like text {
+  margin-right: 25px;
+}
